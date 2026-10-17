@@ -1,53 +1,121 @@
 
-<!-- =========================================================
-     BOTTOM PURCHASE
-     ========================================================= -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="no-referrer">
 
-<div class="divider">
-    <span>• • •</span>
-</div>
+    <title>The Wasteland Spy — GoldAnnie / Aureum</title>
 
-<div class="purchase-area">
+    <style>
+        body {
+            font-family: Georgia, serif;
+            color: #3b2a00;
 
-    <a
-        class="purchase-button"
-        href="https://aureumcreative.github.io/support/"
-        referrerpolicy="no-referrer"
-        rel="noreferrer"
-    >
-        Get the Package on Ko-fi
-    </a>
+            background-image: url("../background.png");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
 
-    <nav class="mobile-nav">
+            min-height: 100vh;
+            margin: 0;
+            padding: 100px 20px;
+            box-sizing: border-box;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card {
+            background: rgba(255, 252, 240, 0.92);
+            max-width: 600px;
+            width: 100%;
+            padding: 45px 30px;
+            border-radius: 16px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            font-size: 32px;
+            margin: 0 0 10px;
+        }
+
+        .names {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 25px;
+        }
+
+        p {
+            font-size: 17px;
+            line-height: 1.6;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 14px 30px;
+            background: #3b2a00;
+            color: #fff8dc;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 18px;
+            transition: opacity 0.2s;
+        }
+
+        a:hover {
+            opacity: 0.85;
+        }
+
+        a:focus-visible {
+            outline: 3px solid #a47a19;
+            outline-offset: 4px;
+        }
+
+        @media (max-width: 480px) {
+            body {
+                padding: 40px 16px;
+            }
+
+            .card {
+                padding: 35px 22px;
+            }
+
+            h1 {
+                font-size: 27px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main class="card">
+
+        <h1>The Wasteland Spy</h1>
+
+        <div class="names">
+            Deacon Bot Package
+        </div>
+
+        <p>
+            You're one step away from The Wasteland Spy package.
+            Continue to the Ko-fi shop listing to view the package
+            and complete your purchase.
+        </p>
 
         <a
-            href="https://janitorai.com/characters/035f2899-0f0c-40b7-82ee-d76c0f02b81a_character-deacon-fallout-4"
-            target="_blank"
-            rel="noopener noreferrer"
-        >
-            <span class="mobile-icon">↩</span>
-            Deacon
-        </a>
-
-        <a
-            href="https://janitorai.com/profiles/be008f16-e767-433a-864f-81724d5cd3f6_profile-of-gold-annie?dicf=1"
-            target="_blank"
-            rel="noopener noreferrer"
-        >
-            <span class="mobile-icon">✦</span>
-            GoldAnnie
-        </a>
-
-        <a
-            href="https://aureumcreative.github.io/support/"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="https://ko-fi.com/s/d5e0120881"
             referrerpolicy="no-referrer"
+            rel="noreferrer"
         >
-            <span class="mobile-icon">♡</span>
-            Ko-fi
+            Continue to Purchase
         </a>
 
-    </nav>
-
-</div>
+    </main>
+</body>
+</html>
