@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="referrer" content="no-referrer">
 
-    <title>Lorebooks Extended — GoldAnnie / Aureum</title>
+    <title>Aureum — GoldAnnie Projects</title>
 
     <style>
         body {
@@ -20,7 +20,7 @@
 
             min-height: 100vh;
             margin: 0;
-            padding: 100px 20px;
+            padding: 60px 20px;
             box-sizing: border-box;
 
             display: flex;
@@ -29,10 +29,10 @@
         }
 
         .card {
-            background: rgba(255, 252, 240, 0.92);
-            max-width: 600px;
+            background: rgba(255, 252, 240, 0.94);
+            max-width: 680px;
             width: 100%;
-            padding: 45px 30px;
+            padding: 45px 35px;
             border-radius: 16px;
             box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
             text-align: center;
@@ -40,45 +40,93 @@
         }
 
         h1 {
-            font-size: 32px;
-            margin: 0 0 10px;
+            font-size: 38px;
+            margin: 0 0 8px;
+            letter-spacing: 2px;
         }
 
-        .names {
-            font-size: 20px;
-            font-weight: bold;
-            margin-bottom: 25px;
-        }
-
-        p {
-            font-size: 17px;
-            line-height: 1.6;
-        }
-
-        a {
-            display: inline-block;
-            margin-top: 15px;
-            padding: 14px 30px;
-            background: #3b2a00;
-            color: #fff8dc;
-            text-decoration: none;
-            border-radius: 8px;
+        .subtitle {
             font-size: 18px;
-            transition: opacity 0.2s;
+            font-style: italic;
+            color: #80601b;
+            margin: 0 0 24px;
         }
 
-        a:hover {
-            opacity: 0.85;
+        .intro {
+            font-size: 17px;
+            line-height: 1.7;
+            margin: 0 auto 30px;
+            max-width: 520px;
         }
 
-        a:focus-visible {
-            outline: 3px solid #a47a19;
+        .divider {
+            width: 70px;
+            height: 2px;
+            background: #b28a32;
+            margin: 0 auto 30px;
+        }
+
+        .section-title {
+            font-size: 23px;
+            margin: 0 0 20px;
+        }
+
+        .projects {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            text-align: left;
+        }
+
+        .project {
+            padding: 20px 22px;
+            border: 1px solid rgba(126, 93, 25, 0.28);
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.38);
+            transition: background 0.2s, border-color 0.2s;
+        }
+
+        .project:hover {
+            background: rgba(255, 255, 255, 0.75);
+            border-color: #a47a19;
+        }
+
+        .project h3 {
+            font-size: 20px;
+            margin: 0 0 7px;
+        }
+
+        .project p {
+            font-size: 15px;
+            line-height: 1.6;
+            margin: 0 0 12px;
+        }
+
+        .project a {
+            color: #6d4d08;
+            font-size: 15px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .project a:hover {
+            text-decoration: underline;
+        }
+
+        .project a:focus-visible {
+            outline: 2px solid #a47a19;
             outline-offset: 4px;
+        }
+
+        .footer {
+            margin: 32px 0 0;
+            font-size: 13px;
+            color: #806f4c;
         }
 
         @media (max-width: 480px) {
             body {
-                padding: 40px 16px;
+                padding: 30px 14px;
             }
 
             .card {
@@ -86,7 +134,15 @@
             }
 
             h1 {
-                font-size: 27px;
+                font-size: 32px;
+            }
+
+            .intro {
+                font-size: 16px;
+            }
+
+            .project {
+                padding: 18px;
             }
         }
     </style>
@@ -94,21 +150,75 @@
 
 <body>
     <main class="card">
-        <h1>Lorebooks Extended</h1>
 
-        <div class="names">
-            An extended Fallout lorebook package
+        <h1>Aureum</h1>
+
+        <div class="subtitle">
+            GoldAnnie's Creative Projects
         </div>
 
-        <p>
-
+        <p class="intro">
+            Welcome! Explore my character bot packages, expanded
+            lore, and other projects created for immersive fandom
+            experiences.
         </p>
 
-<a href="https://aureumcreative.github.io/Fallout-Lorebooks-Extended/"
-   referrerpolicy="no-referrer"
-   rel="noreferrer">
-    Continue to the Lorebooks Extended informational page
-</a>
+        <div class="divider"></div>
+
+        <h2 class="section-title">Explore My Projects</h2>
+
+        <div class="projects">
+
+            <section class="project">
+                <h3>Lorebooks Extended</h3>
+
+                <p>
+                    An extended Fallout lorebook package, expanding
+                    the world's lore and providing additional context
+                    for immersive roleplay.
+                </p>
+
+                <a href="lorebooks-extended/"
+                   rel="noreferrer">
+                    Explore Lorebooks Extended &rarr;
+                </a>
+            </section>
+
+            <section class="project">
+                <h3>The Wasteland Spy</h3>
+
+                <p>
+                    An improved and extended Deacon bot package
+                    for a richer Commonwealth roleplay experience.
+                </p>
+
+                <a href="the-wasteland-spy/"
+                   rel="noreferrer">
+                    Explore The Wasteland Spy &rarr;
+                </a>
+            </section>
+
+            <section class="project">
+                <h3>Fallout Lorebooks Extended</h3>
+
+                <p>
+                    Visit the informational page for the expanded
+                    Fallout lorebook collection.
+                </p>
+
+                <a href="https://aureumcreative.github.io/Fallout-Lorebooks-Extended/"
+                   referrerpolicy="no-referrer"
+                   rel="noreferrer">
+                    Visit the informational page &rarr;
+                </a>
+            </section>
+
+        </div>
+
+        <p class="footer">
+            GoldAnnie / Aureum
+        </p>
+
     </main>
 </body>
 </html>
