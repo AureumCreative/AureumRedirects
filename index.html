@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -68,53 +69,45 @@
 
         .section-title {
             font-size: 23px;
-            margin: 0 0 20px;
+            margin: 0 0 24px;
         }
 
         .projects {
             display: flex;
             flex-direction: column;
+            align-items: center;
             gap: 16px;
-            text-align: left;
         }
 
-        .project {
-            padding: 20px 22px;
-            border: 1px solid rgba(126, 93, 25, 0.28);
+        .project-button {
+            display: block;
+            width: 100%;
+            max-width: 420px;
+            box-sizing: border-box;
+
+            padding: 17px 24px;
+            border: 1px solid #a47a19;
             border-radius: 10px;
-            background: rgba(255, 255, 255, 0.38);
-            transition: background 0.2s, border-color 0.2s;
-        }
 
-        .project:hover {
-            background: rgba(255, 255, 255, 0.75);
-            border-color: #a47a19;
-        }
+            background: #3b2a00;
+            color: #fff8dc;
 
-        .project h3 {
-            font-size: 20px;
-            margin: 0 0 7px;
-        }
-
-        .project p {
-            font-size: 15px;
-            line-height: 1.6;
-            margin: 0 0 12px;
-        }
-
-        .project a {
-            color: #6d4d08;
-            font-size: 15px;
+            font-family: Georgia, serif;
+            font-size: 17px;
             font-weight: bold;
+            text-align: center;
             text-decoration: none;
+
+            transition: background 0.2s, transform 0.2s;
         }
 
-        .project a:hover {
-            text-decoration: underline;
+        .project-button:hover {
+            background: #60470b;
+            transform: translateY(-2px);
         }
 
-        .project a:focus-visible {
-            outline: 2px solid #a47a19;
+        .project-button:focus-visible {
+            outline: 3px solid #a47a19;
             outline-offset: 4px;
         }
 
@@ -141,8 +134,9 @@
                 font-size: 16px;
             }
 
-            .project {
-                padding: 18px;
+            .project-button {
+                padding: 16px 18px;
+                font-size: 16px;
             }
         }
     </style>
@@ -167,56 +161,28 @@
 
         <h2 class="section-title">Explore My Projects</h2>
 
-        <div class="projects">
+        <nav class="projects" aria-label="My projects">
 
-            <section class="project">
-                <h3>Lorebooks Extended</h3>
+            <a class="project-button"
+               href="lorebooks-extended/"
+               rel="noreferrer">
+                Fallout Lorebooks Extended
+            </a>
 
-                <p>
-                    An extended Fallout lorebook package, expanding
-                    the world's lore and providing additional context
-                    for immersive roleplay.
-                </p>
+            <a class="project-button"
+               href="the-wasteland-spy/"
+               rel="noreferrer">
+                The Wasteland Spy
+            </a>
 
-                <a href="lorebooks-extended/"
-                   rel="noreferrer">
-                    Explore Lorebooks Extended &rarr;
-                </a>
-            </section>
+            <a class="project-button"
+               href="support/"
+               referrerpolicy="no-referrer"
+               rel="noreferrer">
+                My Ko-fi
+            </a>
 
-           <section class="project">
-    <h3>Support My Work</h3>
-
-    <p>
-        GoldAnnie / Aureum
-    </p>
-
-    <p>
-        If you're looking for my Ko-fi page, you've found the right place.
-    </p>
-
-    <a href="https://aureumcreative.github.io/support/"
-       referrerpolicy="no-referrer"
-       rel="noreferrer">
-        Continue to Ko-fi &rarr;
-    </a>
-</section>
-
-            <section class="project">
-    <h3>Support My Work</h3>
-
-    <p>
-        Support GoldAnnie / Aureum on Ko-fi and help make
-        future creative projects possible.
-    </p>
-
-    <a href="support/"
-       rel="noreferrer">
-        Continue to Ko-fi &rarr;
-    </a>
-</section>
-
-        </div>
+        </nav>
 
         <p class="footer">
             GoldAnnie / Aureum
@@ -225,3 +191,4 @@
     </main>
 </body>
 </html>
+```
